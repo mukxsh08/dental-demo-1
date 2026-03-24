@@ -301,7 +301,18 @@ export default function AboutPage() {
 
       <div style={{ fontFamily:"var(--font-dm-sans,'DM Sans',sans-serif)", background:"var(--warm-white)", color:"var(--ink)", minHeight:"100vh" }}>
 
-        <Navbar activePage="About" /> 
+        // <Navbar activePage="About" /> 
+<Navbar activePage="About" />
+
+{/* Breadcrumb */}
+<div style={{ maxWidth: 1280, margin: "0 auto", padding: "16px clamp(24px,6vw,80px) 0", display: "flex", alignItems: "center", gap: 8, fontSize: ".85rem", color: "var(--muted)" }}>
+  <a href="/" style={{ color: "var(--muted)", textDecoration: "none", transition: "color .2s" }}
+    onMouseEnter={e => e.currentTarget.style.color = "var(--teal)"}
+    onMouseLeave={e => e.currentTarget.style.color = "var(--muted)"}
+  >Home</a>
+  <span>›</span>
+  <span style={{ color: "var(--teal)", fontWeight: 500 }}>About</span>
+</div>
 
         {/* ══════════════════════════════════════════
             SECTION 1 — DOCTOR PROFILE
