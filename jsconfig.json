@@ -1,5 +1,7 @@
+// ✅ Fixed
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
