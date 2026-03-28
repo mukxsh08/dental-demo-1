@@ -280,7 +280,8 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-export default function Home() {
+// export default function Home() {
+export default function HeroSection() {  // ✅ CORRECT
   return (
     <>
       <style>{`
